@@ -26,7 +26,7 @@
 
         /* Header */
         header {
-            background: linear-gradient(135deg, rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('https://a0.muscache.com/im/pictures/miso/Hosting-46715887/original/5e5b401e-53f9-4404-bad8-43b9c5a02a28.jpeg?im_w=1200');
+            background: linear-gradient(135deg, rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('https://a0.muscache.com/im/pictures/miso/Hosting-46715887/original/bcb44a72-ef72-44ed-ac30-fee61cb41a07.jpeg?im_w=1200');
             background-size: cover;
             background-position: center;
             height: 100vh;
@@ -174,7 +174,7 @@
 
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 50px;
         }
 
@@ -303,8 +303,12 @@
             }
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
+            @media (max-width: 768px) {
+                .features-grid {
+                    grid-template-columns: 1fr;
+                    gap: 30px;
+                }
+            }
             .hero-content h2 {
                 font-size: 2.5rem;
             }
@@ -360,7 +364,7 @@
             <h3>Discover Havino</h3>
             <div class="photo-grid">
                 <div class="photo-card">
-                    <div class="photo-placeholder" style="background-image: url('https://a0.muscache.com/im/pictures/miso/Hosting-46715887/original/bcb44a72-ef72-44ed-ac30-fee61cb41a07.jpeg?im_w=1200');"></div>
+                    <div class="photo-placeholder" style="background-image: url('https://a0.muscache.com/im/pictures/miso/Hosting-46715887/original/5e5b401e-53f9-4404-bad8-43b9c5a02a28.jpeg?im_w=1200');"></div>
                 </div>
                 <div class="photo-card">
                     <div class="photo-placeholder" style="background-image: url('https://a0.muscache.com/im/pictures/miso/Hosting-46715887/original/735fe5ca-e17a-4e32-a1a2-ee38d1136785.jpeg?im_w=1200');"></div>
@@ -401,6 +405,14 @@
                 <div class="feature-item">
                     <h4>Prime Location</h4>
                     <p>Minutes from Blenheim airport, town center, and award-winning wineries - beautifully private yet totally convenient.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Outdoor Entertaining</h4>
+                    <p>Private patio and outdoor spaces perfect for enjoying Marlborough's beautiful weather and stunning sunset views over the vines.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Wine Country Access</h4>
+                    <p>Direct access to world-renowned cellar doors and tasting rooms, with the convenience of staying right in the heart of wine country.</p>
                 </div>
             </div>
         </div>
@@ -454,7 +466,7 @@
             const scrolled = window.pageYOffset;
             const header = document.querySelector('header');
             if (header) {
-                header.style.transform = `translateY(${scrolled * 0.5}px)`;
+                header.style.transform = `translateY(${scrolled * 0.3}px)`;
             }
         });
     </script>
