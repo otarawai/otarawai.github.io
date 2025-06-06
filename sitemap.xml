@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Homepage - Main landing page -->
+  <url>
+    <loc>https://havino.nz/</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Accommodation Section (anchor link on homepage) -->
+  <url>
+    <loc>https://havino.nz/#accommodation</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Amenities/Features Section (anchor link on homepage) -->
+  <url>
+    <loc>https://havino.nz/#amenities</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Reviews/Testimonials Section (anchor link on homepage) -->
+  <url>
+    <loc>https://havino.nz/#reviews</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Location Section (anchor link on homepage) -->
+  <url>
+    <loc>https://havino.nz/#location</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Booking Section (anchor link on homepage) -->
+  <url>
+    <loc>https://havino.nz/#booking</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>
