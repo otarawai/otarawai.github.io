@@ -1,0 +1,29 @@
+# Robots.txt for havino.nz
+# This file tells search engine crawlers which parts of your site they can access
+
+# Allow all crawlers to access all content
+User-agent: *
+Allow: /
+
+# Block access to common admin and system directories (if they exist)
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+
+# Block access to common file types that shouldn't be indexed
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.docx$
+Disallow: /*.xls$
+Disallow: /*.xlsx$
+Disallow: /*.zip$
+Disallow: /*.rar$
+
+# Reference to XML sitemap
+Sitemap: https://havino.nz/sitemap.xml
+
+# Crawl delay (optional - remove if not needed)
+# Crawl-delay: 1
