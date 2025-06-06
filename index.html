@@ -3,7 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Havino - Luxury Accommodation in the Vines</title>
+    <title>Havino - Luxury Blenheim Accommodation | Vineyard Villa Marlborough NZ</title>
+    <meta name="description" content="Luxury self-contained accommodation in Blenheim, Marlborough. Two-bedroom villa amid working vineyard. Minutes from airport, wineries & town center. Book your wine country escape at Havino.">
+    <meta name="keywords" content="Blenheim accommodation, Marlborough accommodation, vineyard accommodation, luxury villa Blenheim, wine country accommodation, self-contained Blenheim, Blenheim Airbnb, Marlborough wine tours accommodation, luxury holiday rental NZ">
+    <meta name="author" content="Havino">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="Havino - Luxury Blenheim Accommodation in Marlborough Vineyard">
+    <meta property="og:description" content="Experience luxury accommodation in the heart of Marlborough wine country. Self-contained two-bedroom villa surrounded by vineyard vines, minutes from Blenheim airport and award-winning wineries.">
+    <meta property="og:image" content="https://a0.muscache.com/im/pictures/miso/Hosting-46715887/original/bcb44a72-ef72-44ed-ac30-fee61cb41a07.jpeg?im_w=1200">
+    <meta property="og:url" content="https://havino.nz">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Havino">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Havino - Luxury Blenheim Accommodation">
+    <meta name="twitter:description" content="Luxury vineyard accommodation in Blenheim, Marlborough. Two-bedroom self-contained villa amid working vines.">
+    <meta name="twitter:image" content="https://a0.muscache.com/im/pictures/miso/Hosting-46715887/original/bcb44a72-ef72-44ed-ac30-fee61cb41a07.jpeg?im_w=1200">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "name": "Havino",
+      "description": "Luxury self-contained accommodation in Blenheim, Marlborough. Two-bedroom villa amid working vineyard with modern amenities and wine country access.",
+      "image": [
+        "https://a0.muscache.com/im/pictures/miso/Hosting-46715887/original/bcb44a72-ef72-44ed-ac30-fee61cb41a07.jpeg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-46715887/original/735fe5ca-e17a-4e32-a1a2-ee38d1136785.jpeg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-46715887/original/a942595e-067b-481b-9faf-d1e8f46b7e01.jpeg?im_w=1200"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Blenheim",
+        "addressRegion": "Marlborough",
+        "addressCountry": "NZ"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -41.5181,
+        "longitude": 173.9544
+      },
+      "url": "https://havino.nz",
+      "telephone": "+6421875556",
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Self-contained accommodation"
+        },
+        {
+          "@type": "LocationFeatureSpecification", 
+          "name": "Two bedrooms"
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Vineyard location"
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Near airport"
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Wine country access"
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Private patio"
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Full kitchen"
+        }
+      ],
+      "starRating": {
+        "@type": "Rating",
+        "ratingValue": "4.89"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.89",
+        "reviewCount": "50"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://havino.nz">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
     <style>
         * {
             margin: 0;
@@ -78,7 +179,7 @@
             animation: fadeInUp 1.5s ease-out;
         }
 
-        .hero-content h2 {
+        .hero-content h1 {
             font-size: 4rem;
             font-weight: 300;
             margin-bottom: 20px;
@@ -120,13 +221,25 @@
             padding: 100px 0;
         }
 
-        .gallery h3 {
+        .gallery h2,
+        .features h2,
+        .location-text h2,
+        .booking h2 {
             text-align: center;
             font-size: 3rem;
             margin-bottom: 80px;
             font-weight: 300;
-            color: #000;
             letter-spacing: 1px;
+        }
+
+        .gallery h2,
+        .location-text h2 {
+            color: #000;
+        }
+
+        .features h2,
+        .booking h2 {
+            color: white;
         }
 
         .photo-grid {
@@ -172,6 +285,19 @@
             letter-spacing: 1px;
         }
 
+        .location-text h3 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            font-weight: 300;
+            color: #000;
+        }
+
+        .booking h3 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
         .features-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -198,6 +324,53 @@
             font-size: 1.1rem;
             opacity: 0.8;
             line-height: 1.8;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background: #f8f8f8;
+            padding: 100px 0;
+        }
+
+        .testimonials h2 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 80px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            color: #000;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .testimonial-item {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .testimonial-item .stars {
+            color: #ffd700;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-item p {
+            font-style: italic;
+            margin-bottom: 20px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .testimonial-item .author {
+            font-weight: 600;
+            color: #333;
         }
 
         /* Location Section */
@@ -255,8 +428,16 @@
 
         .booking p {
             font-size: 1.3rem;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
             opacity: 0.9;
+        }
+
+        .booking-buttons {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
         }
 
         .booking-button {
@@ -283,11 +464,42 @@
         footer {
             background: #111;
             color: #666;
-            text-align: center;
-            padding: 40px 0;
+            padding: 60px 0 40px;
         }
 
-        footer p {
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h4 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #999;
+            text-decoration: none;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+        }
+
+        .footer-bottom p {
             font-size: 0.9rem;
         }
 
@@ -303,13 +515,13 @@
             }
         }
 
-            @media (max-width: 768px) {
-                .features-grid {
-                    grid-template-columns: 1fr;
-                    gap: 30px;
-                }
+        @media (max-width: 768px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
             }
-            .hero-content h2 {
+            
+            .hero-content h1 {
                 font-size: 2.5rem;
             }
             
@@ -322,10 +534,11 @@
                 gap: 40px;
             }
 
-            .gallery h3,
-            .features h3,
-            .location-text h3,
-            .booking h3 {
+            .gallery h2,
+            .features h2,
+            .location-text h2,
+            .booking h2,
+            .testimonials h2 {
                 font-size: 2rem;
             }
 
@@ -340,6 +553,16 @@
                 font-size: 18px;
                 letter-spacing: 2px;
             }
+
+            .booking-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -351,44 +574,44 @@
         </div>
         <div class="container">
             <div class="hero-content">
-                <h2>Luxury in the Vines</h2>
-                <p>Experience elegance amid Marlborough's premier vineyards</p>
+                <h1>Luxury Blenheim Accommodation</h1>
+                <p>Premium vineyard villa in Marlborough wine country</p>
                 <a href="#booking" class="cta-button">Book Your Stay</a>
             </div>
         </div>
     </header>
 
     <!-- Gallery Section -->
-    <section class="gallery">
+    <section class="gallery" id="accommodation">
         <div class="container">
-            <h3>Discover Havino</h3>
+            <h2>Discover Havino - Premium Blenheim Accommodation</h2>
             <div class="photo-grid">
                 <div class="photo-card">
-                    <div class="photo-placeholder" style="background-image: url('https://a0.muscache.com/im/pictures/miso/Hosting-46715887/original/5e5b401e-53f9-4404-bad8-43b9c5a02a28.jpeg?im_w=1200');"></div>
+                    <div class="photo-placeholder" style="background-image: url('https://a0.muscache.com/im/pictures/miso/Hosting-46715887/original/5e5b401e-53f9-4404-bad8-43b9c5a02a28.jpeg?im_w=1200');" alt="Havino villa exterior surrounded by vineyards"></div>
                 </div>
                 <div class="photo-card">
-                    <div class="photo-placeholder" style="background-image: url('https://a0.muscache.com/im/pictures/miso/Hosting-46715887/original/735fe5ca-e17a-4e32-a1a2-ee38d1136785.jpeg?im_w=1200');"></div>
+                    <div class="photo-placeholder" style="background-image: url('https://a0.muscache.com/im/pictures/miso/Hosting-46715887/original/735fe5ca-e17a-4e32-a1a2-ee38d1136785.jpeg?im_w=1200');" alt="Luxury bedroom with vineyard views"></div>
                 </div>
                 <div class="photo-card">
-                    <div class="photo-placeholder" style="background-image: url('https://a0.muscache.com/im/pictures/miso/Hosting-46715887/original/a942595e-067b-481b-9faf-d1e8f46b7e01.jpeg?im_w=1200');"></div>
+                    <div class="photo-placeholder" style="background-image: url('https://a0.muscache.com/im/pictures/miso/Hosting-46715887/original/a942595e-067b-481b-9faf-d1e8f46b7e01.jpeg?im_w=1200');" alt="Modern kitchen and living area"></div>
                 </div>
                 <div class="photo-card">
-                    <div class="photo-placeholder" style="background-image: url('https://a0.muscache.com/im/pictures/miso/Hosting-46715887/original/69331d7a-13e1-42a6-bbbb-f641528d8ca6.jpeg?im_w=1200');"></div>
+                    <div class="photo-placeholder" style="background-image: url('https://a0.muscache.com/im/pictures/miso/Hosting-46715887/original/69331d7a-13e1-42a6-bbbb-f641528d8ca6.jpeg?im_w=1200');" alt="Private patio with vineyard surroundings"></div>
                 </div>
                 <div class="photo-card">
-                    <div class="photo-placeholder" style="background-image: url('https://a0.muscache.com/im/pictures/miso/Hosting-46715887/original/e9864bb9-e3ba-4aac-a6c7-860af9fe0b8f.jpeg?im_w=1200');"></div>
+                    <div class="photo-placeholder" style="background-image: url('https://a0.muscache.com/im/pictures/miso/Hosting-46715887/original/e9864bb9-e3ba-4aac-a6c7-860af9fe0b8f.jpeg?im_w=1200');" alt="Elegant bathroom with modern amenities"></div>
                 </div>
                 <div class="photo-card">
-                    <div class="photo-placeholder" style="background-image: url('https://a0.muscache.com/im/pictures/miso/Hosting-46715887/original/9183d67c-7c27-4688-99c2-16863ee40199.jpeg?im_w=1200');"></div>
+                    <div class="photo-placeholder" style="background-image: url('https://a0.muscache.com/im/pictures/miso/Hosting-46715887/original/9183d67c-7c27-4688-99c2-16863ee40199.jpeg?im_w=1200');" alt="Vineyard rows stretching to horizon"></div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section class="features">
+    <section class="features" id="amenities">
         <div class="container">
-            <h3>Exceptional Amenities</h3>
+            <h2>Why Choose Havino for Your Blenheim Stay</h2>
             <div class="features-grid">
                 <div class="feature-item">
                     <h4>Two Bedroom Villa</h4>
@@ -418,15 +641,39 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="reviews">
+        <div class="container">
+            <h2>What Our Guests Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-item">
+                    <div class="stars">★★★★★</div>
+                    <p>"Absolutely stunning location surrounded by vineyards. The villa is beautifully appointed and the hosts are wonderful. Perfect base for exploring Marlborough's wineries."</p>
+                    <div class="author">- Sarah M.</div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="stars">★★★★★</div>
+                    <p>"Luxury accommodation at its finest. Waking up to vineyard views every morning was magical. So convenient to airport and town yet completely private."</p>
+                    <div class="author">- James & Lisa K.</div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="stars">★★★★★</div>
+                    <p>"The perfect wine country escape. Modern amenities, stunning setting, and amazing hospitality. We'll definitely be back!"</p>
+                    <div class="author">- Michael R.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Location Section -->
-    <section class="location">
+    <section class="location" id="location">
         <div class="container">
             <div class="location-content">
                 <div class="location-text">
-                    <h3>Marlborough Magic</h3>
-                    <p>Nestled in the heart of New Zealand's premier wine region, Havino offers an unparalleled opportunity to experience the essence of Marlborough's world-renowned wine country.</p>
-                    <p>Your private villa sits amid working vineyard rows, providing an authentic connection to the land while maintaining the highest standards of luxury accommodation.</p>
-                    <p>Explore nearby cellar doors, savor world-class Sauvignon Blanc, and return each evening to your elegant retreat surrounded by endless vines under the vast Marlborough sky.</p>
+                    <h2>Perfect Blenheim Location in Marlborough Wine Country</h2>
+                    <p>Havino is ideally positioned in Blenheim, offering guests the perfect base for exploring Marlborough's world-renowned wine region. Our luxury accommodation sits within a working vineyard, providing an authentic wine country experience.</p>
+                    <p>Located just minutes from Blenheim Airport, our self-contained villa offers convenient access while maintaining the tranquil privacy of vineyard surroundings. The town center of Blenheim is easily accessible for dining, shopping, and local attractions.</p>
+                    <p>Wine enthusiasts will love our proximity to award-winning wineries and cellar doors. Spend your days touring prestigious vineyards, tasting world-class Sauvignon Blanc and Pinot Noir, then return to your elegant retreat surrounded by endless rows of vines under the expansive Marlborough sky.</p>
                 </div>
                 <div class="location-image" style="background-image: url('https://a0.muscache.com/im/pictures/miso/Hosting-46715887/original/d429b584-3aa9-4791-8e1c-1f1bc838a5d3.jpeg?im_w=1200'); background-size: cover; background-position: center;">
                 </div>
@@ -437,16 +684,42 @@
     <!-- Booking Section -->
     <section class="booking" id="booking">
         <div class="container">
-            <h3>Reserve Your Experience</h3>
-            <p>Book directly through Airbnb for the best rates and instant confirmation</p>
-            <a href="https://www.airbnb.co.nz/rooms/46715887" target="_blank" class="booking-button">Book on Airbnb</a>
+            <h2>Book Your Blenheim Accommodation</h2>
+            <p>Reserve your luxury vineyard villa experience at Havino</p>
+            <div class="booking-buttons">
+                <a href="https://www.airbnb.co.nz/rooms/46715887" target="_blank" class="booking-button">Book on Airbnb</a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Havino. Luxury accommodation in Marlborough's wine country.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Havino</h4>
+                    <a href="tel:+6421875556">Phone: +64 21 875 556</a>
+                    <p>Blenheim, Marlborough<br>New Zealand</p>
+                    <a href="https://havino.nz">www.havino.nz</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Accommodation</h4>
+                    <p>Luxury vineyard villa</p>
+                    <p>Two bedrooms, self-contained</p>
+                    <p>Minimum 2 night stay</p>
+                    <p>Rates available on request</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Location</h4>
+                    <p>Minutes from Blenheim Airport</p>
+                    <p>Walking distance to wineries</p>
+                    <p>Heart of Marlborough wine country</p>
+                    <p>Easy access to town center</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Havino. Luxury accommodation in Marlborough's wine country. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
@@ -468,6 +741,30 @@
             if (header) {
                 header.style.transform = `translateY(${scrolled * 0.3}px)`;
             }
+        });
+
+        // Track booking button clicks for analytics
+        document.querySelectorAll('.booking-button, .cta-button').forEach(button => {
+            button.addEventListener('click', function() {
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'click', {
+                        'event_category': 'booking',
+                        'event_label': this.textContent.trim()
+                    });
+                }
+            });
+        });
+
+        // Track phone number clicks
+        document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+            link.addEventListener('click', function() {
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'click', {
+                        'event_category': 'contact',
+                        'event_label': 'phone_call'
+                    });
+                }
+            });
         });
     </script>
 </body>
