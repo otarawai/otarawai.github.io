@@ -147,28 +147,96 @@
             background: linear-gradient(45deg, rgba(0,0,0,0.4), rgba(255,255,255,0.1));
         }
 
-       .logo {
+        .logo {
             position: absolute;
             top: 40px;
             left: 40px;
             z-index: 10;
-            width: 160px;
-            height: 160px;
-            background: rgba(255,255,255,0.1);
-            border: 2px solid rgba(255,255,255,0.3);
+            width: 180px;
+            height: auto;
+            background: rgba(255,255,255,0.95);
+            border-radius: 12px;
+            padding: 20px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+        }
+
+        .logo-circle {
+            width: 60px;
+            height: 60px;
+            border: 2px solid #333;
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            backdrop-filter: blur(10px);
-            border-radius: 8px;
-            padding: 12px;
+            margin-bottom: 12px;
+            position: relative;
+            overflow: hidden;
         }
 
-        .logo img {
+        .logo-waves {
             width: 100%;
-            height: 100%;
-            object-fit: contain;
-            filter: brightness(0) invert(1);
+            height: 2px;
+            background: repeating-linear-gradient(
+                to right,
+                #333 0px,
+                #333 3px,
+                transparent 3px,
+                transparent 6px
+            );
+            position: relative;
+        }
+
+        .logo-waves::before {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: repeating-linear-gradient(
+                to right,
+                #333 0px,
+                #333 3px,
+                transparent 3px,
+                transparent 6px
+            );
+        }
+
+        .logo-waves::after {
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: repeating-linear-gradient(
+                to right,
+                #333 0px,
+                #333 3px,
+                transparent 3px,
+                transparent 6px
+            );
+        }
+
+        .logo-text {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            color: #333;
+            letter-spacing: 0.5px;
+            text-align: center;
         }
 
         .hero-content {
@@ -545,13 +613,18 @@
             .logo {
                 top: 20px;
                 left: 20px;
-                width: 100px;
-                height: 50px;
+                width: 140px;
+                padding: 15px;
             }
 
-            .logo h1 {
-                font-size: 18px;
-                letter-spacing: 2px;
+            .logo-circle {
+                width: 50px;
+                height: 50px;
+                margin-bottom: 10px;
+            }
+
+            .logo-text {
+                font-size: 20px;
             }
 
             .booking-buttons {
@@ -570,7 +643,10 @@
     <!-- Header -->
     <header>
         <div class="logo">
-            <img src="havino-logo.png" alt="Havino Logo">
+            <div class="logo-circle">
+                <div class="logo-waves"></div>
+            </div>
+            <div class="logo-text">havino.nz</div>
         </div>
         <div class="container">
             <div class="hero-content">
@@ -729,43 +805,4 @@
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Add scroll effects
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const header = document.querySelector('header');
-            if (header) {
-                header.style.transform = `translateY(${scrolled * 0.3}px)`;
-            }
-        });
-
-        // Track booking button clicks for analytics
-        document.querySelectorAll('.booking-button, .cta-button').forEach(button => {
-            button.addEventListener('click', function() {
-                if (typeof gtag !== 'undefined') {
-                    gtag('event', 'click', {
-                        'event_category': 'booking',
-                        'event_label': this.textContent.trim()
-                    });
-                }
-            });
-        });
-
-        // Track phone number clicks
-        document.querySelectorAll('a[href^="tel:"]').forEach(link => {
-            link.addEventListener('click', function() {
-                if (typeof gtag !== 'undefined') {
-                    gtag('event', 'click', {
-                        'event_category': 'contact',
-                        'event_label': 'phone_call'
-                    });
-                }
-            });
-        });
-    </script>
-</body>
-</html>
+                    behavior
